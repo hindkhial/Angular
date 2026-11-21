@@ -1,0 +1,52 @@
+:root {
+  font-family: Inter, system-ui, sans-serif;
+  color: #201630;
+  background: #f3edf9;
+}
+
+body {
+  display: grid;
+  min-height: 100vh;
+  margin: 0;
+  padding: 1rem;
+  box-sizing: border-box;
+  place-items: center;
+}
+
+app-root {
+  width: min(100%, 28rem);
+}
+
+main {
+  padding: clamp(1.5rem, 7vw, 3.5rem);
+  border: 1px solid #e3d7ee;
+  border-radius: 1.25rem;
+  background: #fff;
+  box-shadow: 0 1rem 3rem #43206c18;
+}
+
+h1 {
+  margin: 0 0 1.5rem;
+  font-size: clamp(2.25rem, 8vw, 3.5rem);
+  line-height: 1.1;
+}
+
+button {
+  border: 0;
+  border-radius: 0.6rem;
+  padding: 0.75rem 1.1rem;
+  background: #7025b6;
+  color: #fff;
+  font: inherit;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #59198f;
+}
+
+button:focus-visible {
+  outline: 3px solid #7025b6;
+  outline-offset: 4px;
+}

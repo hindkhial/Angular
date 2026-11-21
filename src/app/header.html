@@ -1,0 +1,7 @@
+<main>
+  <h1 aria-live="polite">{{ title }}</h1>
+  <button type="button" (click)="rename()">Renommer</button>
+  <button type="button" [disabled]="!canDelete">Supprimer</button>
+
+  <app-task-list />
+</main>
